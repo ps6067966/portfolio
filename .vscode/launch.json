@@ -8,6 +8,7 @@
             "name": "portfolio",
             "request": "launch",
             "type": "dart",
+            "args": ["-d", "edge", "--web-port", "5000", "--web-renderer", "html"]
         },
         {
             "name": "portfolio (profile mode)",

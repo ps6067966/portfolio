@@ -17,10 +17,29 @@ class HomeScreen extends StatelessWidget {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Expanded(
+                  Expanded(
                       child: SizedBox(
                     child: Column(
-                      children: [Icon(Icons.ac_unit)],
+                      children: [
+                        Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            const Column(
+                              children: [
+                                Text("Nikhil Solanki"),
+                              ],
+                            ),
+                            Positioned.fill(
+                              top: -50,
+                              child: Align(
+                                alignment: Alignment.topCenter,
+                                child: Image.network(
+                                    "https://lh3.googleusercontent.com/a/AAcHTtcQ_arO5QMSBQkIznGaiUW3tV6w0wI4y4Cgo6wdSOfJLpnu=s96-c"),
+                              ),
+                            )
+                          ],
+                        ),
+                      ],
                     ),
                   )),
                   Expanded(
